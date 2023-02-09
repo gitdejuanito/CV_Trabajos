@@ -1,0 +1,28 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<h1> Actualizar cuenta</h1>
+
+<h2>Cambia tu registro</h2>
+<table>
+   {% if form %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        
+        <p>{{form}}</p>
+
+    <input type="submit" value="Actualizar CUENTA" >
+    </form>
+    {% endif %}
+
+    
+    {% if errors %}
+        
+        {{ errors }}
+    
+    {% endif %}
+
+</table>
+{% endblock %}

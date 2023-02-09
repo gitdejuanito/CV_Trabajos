@@ -1,0 +1,24 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<h1> $ MOVIMIENTOS BANCARIOS $</h1>
+
+
+
+   {% if form %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        
+        <p>{{form}}</p>
+
+    <input type="submit" value="Crear movimiento" >
+    </form>
+    {% endif %}
+
+    {% if form_errors %}
+    {{form_errors}}
+    {% endif%}
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<h1> CREAR UNA CUENTA</h1>
+
+
+<table>
+   {% if form %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        
+        <p>{{form}}</p>
+
+    <input type="submit" value="Crear CUENTA" >
+    </form>
+    {% endif %}
+
+    
+    {% if errors %}
+        
+        {{ errors }}
+    
+    {% endif %}
+
+</table>
+{% endblock %}

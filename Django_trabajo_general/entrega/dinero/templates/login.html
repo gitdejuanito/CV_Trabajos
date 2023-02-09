@@ -1,0 +1,27 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<h1> Ingrese datos para login</h1>
+
+
+<table>
+   {% if form %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        
+        <p>{{form}}</p>
+
+    <input type="submit" value="Login" >
+    </form>
+    {% endif %}
+    
+</table>
+
+{% if errors %}
+    <p>{{errors}}</p>
+
+{% endif %}
+
+{% endblock %}
