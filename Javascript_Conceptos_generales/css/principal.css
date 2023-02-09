@@ -1,0 +1,85 @@
+.whatsapp {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  position: fixed;
+  line-height: 80px;
+  right: 0px;
+  bottom: 50px; }
+
+.facebook {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  position: fixed;
+  line-height: 80px;
+  right: 0px;
+  bottom: 0px; }
+
+.conoce_pruebas {
+  font-size: 90px;
+  position: relative;
+  margin-top: 10px; }
+
+.esfuerzo_banda {
+  font-size: 60px;
+  position: relative;
+  top: -50px; }
+
+.texto_banda {
+  font-size: 22px;
+  line-height: 170%;
+  position: relative;
+  top: -80px; }
+
+.imagen_banda {
+  position: relative;
+  left: 850px;
+  top: -350px; }
+
+.prueba_holter {
+  font-size: 60px;
+  position: relative;
+  top: -320px; }
+
+.texto_holter {
+  font-size: 22px;
+  line-height: 170%;
+  position: relative;
+  top: -350px; }
+
+.imagen_holter {
+  position: relative;
+  left: 850px;
+  top: -610px; }
+
+.presion_arterial {
+  font-size: 60px;
+  position: relative;
+  top: -600px; }
+
+.texto_arterial {
+  font-size: 22px;
+  line-height: 170%;
+  position: relative;
+  top: -630px; }
+
+.monitor {
+  position: relative;
+  left: 850px;
+  top: -890px; }
+
+.imagen_banda {
+  position: relative;
+  left: 850px;
+  top: -250px; }
+
+.imagen_holter {
+  position: relative;
+  left: 850px;
+  top: -170px; }
+
+.monitor {
+  position: relative;
+  left: 0px;
+  top: 0px; }
