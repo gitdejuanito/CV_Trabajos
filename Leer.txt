@@ -1,6 +1,9 @@
+Todos los trabajos fueron hechos con entornos virtuales (virtualenv).
+
+
 Para todos los trabajos en DJANGO es necesario tener y crear un virtualenv y claro instalar Django.
 
-Para el trabajo de FastAPI es necesario instalar fastapi y uvicorn.
+Para el trabajo de FastAPI es necesario instalar fastapi, uvicorn y sqlalchemy. De igual manera es necesario crear un virtualenv.
 
 De igual manera se necesita:
 
