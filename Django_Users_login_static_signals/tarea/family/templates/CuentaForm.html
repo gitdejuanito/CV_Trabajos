@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST" action="">
+{% csrf_token %}
+
+
+{{form}}
+<BR>
+<br>
+<input type="submit" value="CREAR">
+</form>
+
+{% endblock %}

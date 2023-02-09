@@ -1,0 +1,17 @@
+{% if form %}
+
+
+<form method="POST"  action="">
+{% csrf_token  %}
+{{ form}}
+
+{% endif %}
+
+<input type="submit" value="LOGIN">
+</form>
+
+{% if errors %}
+        
+        {{ errors }}
+    
+    {% endif %}

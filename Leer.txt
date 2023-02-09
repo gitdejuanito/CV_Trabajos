@@ -1,0 +1,8 @@
+Para todos los trabajos en DJANGO es necesario tener y crear un virtualenv y claro instalar Django.
+
+Para el trabajo de FastAPI es necesario instalar fastapi y uvicorn.
+
+De igual manera se necesita:
+
+	-Python actualizado
+	-Django actualizado

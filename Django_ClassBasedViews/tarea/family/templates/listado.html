@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>{% for x in datos %}
+
+    <p>Nombre del equipo: {{x.equipo}}</p>
+        <p>Liga en la que juega:{{x.liga}}</p>
+            <p>Pais: {{x.pais}}</p>
+            <a href="/delete/{{x.pk}}/" class="btn btn-danger" >Borrar equipo</a>
+            <a href="/update/{{x.pk}}/" class="btn btn-primary" >Actualizar equipo</a>
+<br>
+<br>
+<br>
+<br>
+{% endfor %}</p>
+
+{% endblock %}

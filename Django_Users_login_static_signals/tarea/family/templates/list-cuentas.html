@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for x in all_products %}
+
+<p>{{x.Username}}</p>
+<p>{{x.name}}</p>
+<p>{{x.phone}}</p>
+
+
+
+<br>
+<br>
+{% endfor %}
+{% endblock %}
+
+
