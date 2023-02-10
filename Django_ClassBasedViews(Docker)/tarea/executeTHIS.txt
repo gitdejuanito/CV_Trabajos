@@ -1,0 +1,19 @@
+
+
+First you need to be in the file "tarea" as this example
+
+        "C:\Users\juan_\Trabajos_CV\Django_ClassBasedViews\tarea> docker build --tag django-classbasedviews . "
+
+Then execute the following:
+    docker build --tag django-classbasedviews . 
+    docker run --publish 8000:8000 django-classbasedviews
+
+
+Para detener el container puede ser con CTRL+C, algunas veces no funciona entonces se puede ejecutar
+lo siguiente::
+
+Se debe saber que ID tiene el container con:
+    docker container ls
+
+para detener el conteiner se ejecuta lo siguiente:
+    docker stop containerID

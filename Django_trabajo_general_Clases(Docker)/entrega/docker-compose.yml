@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+
+    
+  django:
+      image: django-clasesgeneral
+      build: .
+      ports:
+        - "8000:8000"
+  
+
+
+
+##correr con "docker compose up --build"

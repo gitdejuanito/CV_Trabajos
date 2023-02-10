@@ -1,3 +1,5 @@
+##pip freeze > requirements.txt
+
 ##correr la API
 
 ##uvicorn main:app --reload
@@ -12,6 +14,8 @@ import models
 from database import Base, engine, SessionLocal
 from sqlalchemy.orm import Session 
 from sqlalchemy import MetaData
+
+import uvicorn
 
 ##crea el archivo todo de la db
 Base.metadata.create_all(engine)
@@ -66,3 +70,11 @@ def deleteItem(id:int, session: Session = Depends(get_session)):
     session.commit()
     session.close()
     return 'Item was deleted...'
+
+if __name__=="__main__":
+    uvicorn.run(app,port=8000, host="0.0.0.0")
+
+##para correr, en el html la direccion es "http://127.0.0.1:8000/docs#" y en terminal poner "docker run -p 8000:8000 fastapi-crud"
+
+#Para detener es "docker container ls"
+#despues checar el CONTAINER ID... y "docker stop (containerID)"

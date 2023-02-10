@@ -1,0 +1,22 @@
+docker build --tag django-general .
+docker run --publish 8000:8000 django-clasesgeneral
+
+
+
+First you need to be in the file "entrega" as this example:
+    "(venv) PS C:\Users\juan_\Trabajos_CV\Django_trabajo_general_Clases(Docker)\entrega> "
+        
+
+Then execute the following:
+    docker build --tag django-clasesgeneral . 
+    docker run --publish 8000:8000 django-clasesgeneral
+
+
+Para detener el container puede ser con CTRL+C, algunas veces no funciona entonces se puede ejecutar
+lo siguiente::
+
+Se debe saber que ID tiene el container con:
+    docker container ls
+
+para detener el conteiner se ejecuta lo siguiente:
+    docker stop containerID
