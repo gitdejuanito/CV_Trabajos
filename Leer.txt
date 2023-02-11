@@ -1,5 +1,7 @@
 Para mayor accesibilidad los trabajos estan en mi repositorio de Docker at:   juanwzff/juanprojects1
 
+--Los que programas que tienen en el nombre "(Docker)" es porque estan dockerizados para su facilidad de visualización.
+
 
 
 Sino se tiene Docker:

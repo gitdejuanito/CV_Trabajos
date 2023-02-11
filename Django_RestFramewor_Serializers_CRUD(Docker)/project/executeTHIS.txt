@@ -1,0 +1,21 @@
+
+
+First you need to be in the file "project" as this example
+
+        "C:\Users\juan_\Trabajos_CV\Django_ClassBasedViews\project> docker build --tag django-classbasedviews . "
+
+Then execute the following:
+    docker build --tag django_serializers_json_api . 
+    docker run --publish 8000:8000 django_serializers_json_api
+
+
+Para detener el container puede ser con CTRL+C, algunas veces no funciona entonces se puede ejecutar
+lo siguiente::
+
+Borrar la actual terminal
+
+Se debe saber que ID tiene el container con:
+    docker container ls
+
+para detener el conteiner se ejecuta lo siguiente:
+    docker stop containerID

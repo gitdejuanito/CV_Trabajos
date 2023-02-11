@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+
+    
+  django:
+      image: django_serializers_json_api
+      build: .
+      ports:
+        - "8000:8000"
+  
+
+
+
+##correr con "docker compose up --build"
