@@ -17,3 +17,6 @@ De igual manera se necesita:
 
 	-Python actualizado
 	-Django actualizado
+
+
+Para el trabajo de Flask, se anexa la DB, la conexion con SQL se hizo local, favor de colocar en el archivo "conexionSQL_local.py" algun host que tenga creado en MySQL y agregar ahi la DB
