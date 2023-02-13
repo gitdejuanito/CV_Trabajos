@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(159, 159, 159)">
+    <center>FLASK-MySQL</center>
+<form action="/customer" method="POST">
+    <div class="card shadow">
+        <div class="card-body">
+          <label>CustomerID</label>
+          <input type="text" name="customerid">
+
+          <label>First name</label>
+          <input type="text" name="first_name">
+
+          <label>Last name</label>
+          <input type="text" name="last_name">
+
+          <label>Birth date</label>
+          <input type="text" name="birth_date">
+
+          <label>Phone</label>
+          <input type="text" name="phone">
+
+          <label>Address</label>
+          <input type="text" name="address">
+
+          <label>City</label>
+          <input type="text" name="city">
+
+          <label>state</label>
+          <input type="text" name="state">
+
+          <label>points</label>
+          <input type="text" name="points">
+
+          <button type="submit">Create</button>
+        
+        </div>
+      </div>
+
+
+</form>
+
+<table>
+<thead>
+    
+
+</thead>
+<tr>
+<th scope="col"> CustomerID</th>
+<th scope="col"> First name</th>
+<th scope="col"> Last name</th>
+<th scope="col"> Birth date</th>
+<th scope="col"> Phone</th>
+<th scope="col"> address</th>
+<th scope="col"> city</th>
+<th scope="col"> state</th>
+<th scope="col"> points</th>
+
+
+</tr>
+
+
+<tbody>
+
+{% for d in data %} 
+<tr>
+<td>{{d.customer_id}} </td>
+<td>{{d.first_name}} </td>
+<td>{{d.last_name}} </td>
+<td>{{d.birth_date}} </td>
+<td>{{d.phone}} </td>
+<td>{{d.address}} </td>
+<td>{{d.city}} </td>
+<td>{{d.state}} </td>
+<td>{{d.points}} </td>
+<td><button class="btn btn-primary" id="btn-edit {{d.customer_id}}" data-bs-toggle="modal" data-bs-target="#modal{{d.customer_id}}">Update</button> </td>
+<td><a href="{{url_for('delete', id=d.customer_id)}}" class="btn btn-danger"> Delete </a> </td>
+
+
+</tr>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal{{d.customer_id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">{{d.first_name}}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="/update/{{d.customer_id}}" method="post">
+                
+      
+                <label>First name</label>
+                <input type="text" name="first_name" value="{{d.first_name}}">
+      
+                <label>Last name</label>
+                <input type="text" name="last_name" value="{{d.last_name}}">
+      
+                <label>Birth date</label>
+                <input type="text" name="birth_date" value="{{d.birth_date}}">
+      
+                <label>Phone</label>
+                <input type="text" name="phone" value="{{d.phone}}">
+      
+                <label>Address</label>
+                <input type="text" name="address" value="{{d.address}}">
+      
+                <label>City</label>
+                <input type="text" name="city" value="{{d.city}}">
+      
+                <label>state</label>
+                <input type="text" name="state" value="{{d.state}}">
+      
+                <label>points</label>
+                <input type="text" name="points" value="{{d.points}}">
+
+
+        </div>
+        <div class="modal-footer">
+          
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </div>
+    </form>
+      </div>
+    </div>
+  </div>
+
+
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
+</body>
+</html>
