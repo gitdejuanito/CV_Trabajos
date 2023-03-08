@@ -8,6 +8,8 @@ Then execute the following:
     docker build --tag django_serializers_json_api . 
     docker run --publish 8000:8000 django_serializers_json_api
 
+After that in your navegator please paste this:
+    http://localhost:8000/    --  thats where the container executes
 
 Para detener el container puede ser con CTRL+C, algunas veces no funciona entonces se puede ejecutar
 lo siguiente::

@@ -78,3 +78,9 @@ def update(id):
 
 if __name__ == "__main__":
     app.run(debug=True,port=8000)
+
+##For running, execute this in terminal
+
+##python .\src\app.py
+
+

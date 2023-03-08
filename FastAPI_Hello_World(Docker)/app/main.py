@@ -24,7 +24,9 @@ if __name__=="__main__":
 
     ## es necesario especificar el port y host de la app
 
-##para correr, en el html la direccion es "http://127.0.0.1:8000/docs#" y en terminal poner "docker run -p 8000:8000 python_fastapi_helloworld"
+##para correr, en el html la direccion es "http://localhost:8000/docs" y en terminal poner "docker run -p 8000:8000 python_fastapi_helloworld"
+
+
 
 #Para detener es "docker container ls"
 #despues checar el CONTAINER ID... y "docker stop containerID"

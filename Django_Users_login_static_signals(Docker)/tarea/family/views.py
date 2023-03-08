@@ -5,7 +5,7 @@ from family.forms import familiaForm
 from django.contrib.auth.decorators import login_required
 from family.decorators import allowed_users
 from Users.models import customer
-
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 

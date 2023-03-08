@@ -7,6 +7,11 @@ First you need to be in the file "tarea" as this example
 Then execute the following:
     docker build --tag django-classbasedviews . 
     docker run --publish 8000:8000 django-classbasedviews
+    
+
+After that in your navegator please paste this:
+    http://localhost:8000/    --  thats where the container execute
+
 
 
 Para detener el container puede ser con CTRL+C, algunas veces no funciona entonces se puede ejecutar

@@ -4,7 +4,7 @@ services:
 
     
   django:
-      image: Django_ClassBasedViews
+      image: django_classbasedviews
       build: .
       ports:
         - "8000:8000"

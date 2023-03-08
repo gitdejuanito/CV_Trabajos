@@ -23,8 +23,8 @@ CMD [ "python" , "/main.py"]
 
 # se tuvo que crear imagen  docker build -t fastapi-crud .
 
-##para correr, en el html la direccion es "http://127.0.0.1:8000/docs#" y en terminal poner:
-#"docker run -p 8000:8000 fastapi-crud"
+##para correr colocar en la terminal "docker run -p 8000:8000 fastapi-crud" en el html la direccion es "http://localhost:8000/docs"
+
 
 
 # Para detener el container puede ser con CTRL+C, algunas veces no funciona entonces se puede ejecutar
